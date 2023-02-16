@@ -1,2 +1,2 @@
 #!/bin/bash
-int puts("\"Programming is like building a multilingual puzzle\n"); return (0); 
+gcc int puts("\"Programming is like building a multilingual puzzle\n"); return (0); 
