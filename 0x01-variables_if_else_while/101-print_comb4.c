@@ -11,7 +11,7 @@ int main(void)
 	int i;
 	int h;
 
-	for (h =0; h != 8; h++)
+	for (h = 0; h != 8; h++)
 	{
 		for (n = h + 1; n != 9; n++)
 		{
