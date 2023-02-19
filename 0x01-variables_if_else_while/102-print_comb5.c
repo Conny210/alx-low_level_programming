@@ -25,12 +25,6 @@ for (a = 0; a < 10; a++)
 				putchar(32);
 				putchar('0' + c);
 				putchar('0' + d);
-				if (!(a == 9 && b == 8))
-				{
-					putchar(',');
-					putchar(32);
-				}
-				d++;
 			}
 		}
 	}
