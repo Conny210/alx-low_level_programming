@@ -20,18 +20,15 @@ for (a = 0; a < 10; a++)
 		{
 			for (d = 0; d < 10; d++)
 			{
-				for (!(a == b && b == c && c == d))
+				putchar('0' + a);
+				putchar('0' + b);
+				putchar(32);
+				putchar('0' + c);
+				putchar('0' + d);
+				if (!(a == 9 && b == 8))
 				{
-					putchar('0' + a);
-					putchar('0' + b);
+					putchar(',');
 					putchar(32);
-					putchar('0' + c);
-					putchar('0' + d);
-					if (!(a == 9 && b == 8))
-					{
-						putchar(',');
-						putchar(32);
-					}
 				}
 			}
 		}
