@@ -25,11 +25,12 @@ for (a = 0; a < 10; a++)
 				putchar(32);
 				putchar('0' + c);
 				putchar('0' + d);
-				for (!(a == 9 && b == 8))
+				if (!(a == 9 && b == 8))
 				{
 					putchar(',');
 					putchar(32);
 				}
+				putchar(d++);
 			}
 		}
 	}
