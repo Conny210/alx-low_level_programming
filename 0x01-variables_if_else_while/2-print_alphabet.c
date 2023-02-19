@@ -15,7 +15,7 @@ int main(void)
 		(ch = 'a';
 		 ch <= 'z';
 		 ch++);
-	putchar("%c",ch);
+	putchar(ch);
 	putchar('\n');
 	getchar();
 	return (0);
