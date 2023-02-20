@@ -30,7 +30,8 @@ for (a = 0; a < 10; a++)
 					putchar(',');
 					putchar(32);
 				}
-			}
+				d++
+			} while ( d > 0; d < 10)
 		}
 	}
 }
