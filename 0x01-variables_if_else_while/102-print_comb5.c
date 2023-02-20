@@ -20,7 +20,7 @@ for (a = 0; a < 10; a++)
 		{
 			for (d = 0; d < 10; d++)
 			{
-				if (!(a == b || a == c || a == d || b == c || c == d))
+				if (!(a == b,c,d))
 				{
 					putchar('0' + a);
 					putchar('0' + b);
