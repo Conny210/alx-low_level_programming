@@ -18,8 +18,8 @@ for (a = 0; a < 10; a++)
 	{
 		for (c = 0; c < 10; c++)
 		{
-			d = c + 1;
-			do {
+			for (d = 0; d < 10; d++)
+			{
 				putchar('0' + a);
 				putchar('0' + b);
 				putchar(32);
@@ -30,8 +30,7 @@ for (a = 0; a < 10; a++)
 					putchar(',');
 					putchar(32);
 				}
-				d++;
-			} while (d < 10);
+			}
 		}
 	}
 }
