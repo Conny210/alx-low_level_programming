@@ -31,7 +31,7 @@ for (a = 0; a < 10; a++)
 					putchar(32);
 				}
 				d++;
-			} while (0 > d < 10);
+			} while (d < 10);
 		}
 	}
 }
