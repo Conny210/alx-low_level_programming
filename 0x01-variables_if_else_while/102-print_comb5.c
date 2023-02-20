@@ -18,22 +18,20 @@ for (a = 0; a < 10; a++)
 	{
 		for (c = 0; c < 10; c++)
 		{
-			for (d = 0; d < 10; d++)
-			{
-				if (!(a == b && a == c && a == d))
-				{
-					putchar('0' + a);
-					putchar('0' + b);
-					putchar(32);
-					putchar('0' + c);
-					putchar('0' + d);
-				}
+			d = c + 1;
+			do {
+				putchar('0' + a);
+				putchar('0' + b);
+				putchar(32);
+				putchar('0' + c);
+				putchar('0' + d);
 				if (!(a == 9 && b == 8))
 				{
 					putchar(',');
 					putchar(32);
 				}
-			}
+				d++;
+			} while (d != 10);
 		}
 	}
 }
