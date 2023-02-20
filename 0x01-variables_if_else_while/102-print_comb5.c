@@ -33,6 +33,7 @@ for (a = 0; a < 10; a++)
 					putchar(',');
 					putchar(32);
 				}
+				d++;
 			}
 		}
 	}
