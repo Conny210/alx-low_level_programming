@@ -2,10 +2,11 @@
 #include <math.h>
 
 /**
- * main - main block
- * Description:print largest prime factor 
- * Return: 0
- */
+* main - main block
+* Description:Print largest prime factor
+* Return: 0
+*/
+
 int main(void)
 {
 	int c;
