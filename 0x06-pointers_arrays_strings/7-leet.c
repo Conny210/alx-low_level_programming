@@ -1,28 +1,32 @@
 #include "main.h"
 
 /**
- * leet - encode a string into 1337
- * @s: string
- * Return: encoded string `s`
+ * leet - encodes string into 1337
+ * @s: string to be encoded
+ *
+ * Return: a point the s
  */
-
 char *leet(char *s)
 {
-	int i;
+	char lt[10][2] = {
+		{'a', '0' + 4}, {'A', '0' + 4},
+		{'e', '0' + 3}, {'E', '0' + 3},
+		{'o', '0'}, {'O', '0'},
+		{'t', '0' + 7}, {'T', '0' + 7},
+		{'l', '0' + 1}, {'L', '0' + 1}};
+	int i = 0;
+	int z = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
-		while (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+		while (lt[z][0] != '\0')
+		{
+			if (s[i] == lt[z][0])
+				s[i] = lt[z][1];
+			z++;
+		}
+		z = 0;
+		i++;
 	}
-
 	return (s);
 }
