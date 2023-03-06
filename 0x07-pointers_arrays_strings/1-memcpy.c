@@ -5,7 +5,7 @@
  * @n: number of bytes
  * @dest: pointer
  *
- * Return: A ponter to the memory of s
+ * Return: A ponter to dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -14,7 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	x = 0;
 	while (x < n)
 	{
-		dest[x] = *src;
+		dest[x] = src[x];
 		x++;
 	}
 
