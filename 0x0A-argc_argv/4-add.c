@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * @argc: count of arguments 
+ * @argc: count of arguments
  * @argv: array of pointers to strings
  *
  * Return: 0 (Sucess) else 1 (Failure).
