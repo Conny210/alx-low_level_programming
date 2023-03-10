@@ -1,6 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main - Entry point
@@ -11,27 +11,26 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, c, sum = 0;
+	int total, i;
+	char *p;
+	int num;
 
-	if (argc < 2)
+	total = 0;
+	if (argc > 1)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	for (i = 1; i < argc; i++)
-	{
-		for (c = 0; argv[i][c] != '\0'; c++)
+		for (i = 1; argv[i]; i++)
 		{
-			if (!isdigit(argv[i][c]))
+			num = strtol(argv[i], &p, 10);
+			if (!*p)
+				total += num;
+			else
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		sum += atoi(argv[i]);
 	}
-
-	printf("%d\n", sum);
+	printf("%d\n", total);
 	return (0);
 }
+
