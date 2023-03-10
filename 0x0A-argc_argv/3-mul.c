@@ -11,15 +11,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int x, sum =1;
+	(void) argc;
 
-	if (argc != 3)
+	if (argv[1] && argv[2])
 	{
-		printf("Error\n");
-		return (1);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
 	}
-	for (x = 1; x < argc; x++)
-		sum *= atoi(argv[x]);
-	printf("%d\n", sum);
-	return (0);
+	else
+		printf("Error\n");
+
+	return (1);
 }
