@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * arrayr_iterator - executes a function given as a parameter
+ * array_iterator - executes a function given as a parameter
  *
  * @array: array to iterate over
  *
