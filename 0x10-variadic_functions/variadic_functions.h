@@ -26,6 +26,6 @@ void pr_int(va_list);
 void pr_char(va_list);
 void pr_float(va_list);
 void pr_str(va_list);
-int _putchar(char c)
+int _putchar(char c);
 #endif
 
