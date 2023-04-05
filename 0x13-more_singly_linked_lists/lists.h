@@ -21,6 +21,17 @@ void free_list(list_t *head);
 
 /* 0x13. C - More singly linked lists */
 
+/**
+ * struct listint_s - singly linked list
+ *
+ * @n: integer
+ *
+ * @next: point to next node
+ *
+ * Description: singly linked list node structure
+ *
+ */
+
 typedef struct listint_s
 {
 	int n;
