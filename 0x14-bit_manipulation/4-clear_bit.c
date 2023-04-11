@@ -18,7 +18,7 @@ int clear_bit(unsigned long int *v, unsigned int index)
 	else if ((*v >> index) & 1)
 	{
 		*v -= 1 << index;
-		return (10);
+		return (1);
 	}
 	else
 		return (1);
