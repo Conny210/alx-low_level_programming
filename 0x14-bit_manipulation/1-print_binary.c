@@ -4,7 +4,7 @@
 /**
  * print_binary - function prints binary representation
  *
- * @n: value
+ * @x: value
  */
 
 void print_binary(unsigned long int x)
