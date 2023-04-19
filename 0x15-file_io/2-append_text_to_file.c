@@ -5,7 +5,7 @@
 #include <fcntl.h>
 
 /**
- * append_text_to_file - Appends text 
+ * append_text_to_file - Appends text
  *
  * @filename: Filename
  *
