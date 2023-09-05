@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -12,9 +15,11 @@ void print_to_98(int n);
 void print_times_table(int n);
 
 /**
+ * B
  * prototypes for module 0x03
  */
 int _isupper(int c);
+B
 int _isdigit(int c);
 int mul(int a, int b);
 void print_numbers(void);
@@ -27,6 +32,7 @@ void print_triangle(int size);
 void print_number(int n);
 
 /**
+ * 
  * Prototypes for module 0x04
  */
 void reset_to_98(int *n);
@@ -95,3 +101,5 @@ int is_prime(int n, int i);
 int is_palindrome(char *s);
 int palindrome_check(char *s, int len, int i);
 int wildcmp(char *s1, char *s2);
+
+#endif
