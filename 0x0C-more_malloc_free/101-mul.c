@@ -15,9 +15,9 @@ int _isNum(char *num)
 	for (i = 0; num[i] != '\0'; i++)
 	{
 		if (num[i] < '0' || num[i] > '9')
-			return (1);
+			return (0);
 	}
-	return (0);
+	return (1);
 }
 
 /**
