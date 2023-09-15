@@ -45,7 +45,7 @@ void print_all(const char * const format, ...)
 /**
   * print_a_char - function prints char
   * @separator: string
-  * @args: list of variadic arguments
+  * @a: list of variadic arguments
   *
   */
 
@@ -57,7 +57,7 @@ void print_a_char(char *separator, va_list a)
 /**
   * print_a_integer - function prints int
   * @separator: string
-  * @args: list of variadic arguments
+  * @a: list of variadic arguments
   *
   */
 
@@ -69,7 +69,7 @@ void print_a_integer(char *separator, va_list a)
 /**
   * print_a_float - function prints float
   * @separator: string
-  * @args: list of variadic arguments
+  * @a: list of variadic arguments
   *
   */
 
@@ -81,7 +81,7 @@ void print_a_float(char *separator, va_list a)
 /**
   * print_a_char_ptr - function prints content of pointer to char
   * @separator: string
-  * @args: list of variadic arguments
+  * @a: list of variadic arguments
   *
   * Return: nothing
   */
