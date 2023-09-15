@@ -1,55 +1,41 @@
-#include "function_pointers.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * print_opcodes - function prints opcodes
- * @x: integer
- */
-
-void print_opcodes(int x)
-{
-	unsigned char *p = (unsigned char *)print_opcodes;
-	int i;
-
-	for (i = 0; i < x; i++)
-	{
-		printf("%02x", p[i]);
-
-		if (i < x - 1)
-		{
-			printf(" ");
-		}
-	}
-
-	printf("\n");
-}
-
-/**
- * main - prints name
- * @argc: name
- * @argv: arguments
+ * main - prints opcodes
  *
- * Return: 0 (sucess)
+ * @argc: count
+ * @argv: vector
+ *
+ * Return: integer
  */
 
 int main(int argc, char *argv[])
 {
-	int x = atoi(argv[1]);
+	int x, (*y)(int, char **) = main;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
 
-	if (x < 0)
+	if (atoi(argv[1]) < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
 
-	print_opcodes(x);
+	printf("%.2x", *(unsigned char *)y);
+	y++;
+
+	for (x = 1; x < atoi(argv[1]); x++)
+	{
+		printf(" %.2x", *(unsigned char *)y);
+		y++;
+	}
+
+	printf("\n");
 
 	return (0);
 }
