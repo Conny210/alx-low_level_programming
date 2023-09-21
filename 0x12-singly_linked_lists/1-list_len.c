@@ -1,9 +1,9 @@
 #include "lists.h"
-#include <stddef.h>
 
 /**
  * list_len - returns number of elements
  * @h: pointer
+ *
  * Return: number of elements
  */
 
