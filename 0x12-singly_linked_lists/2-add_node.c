@@ -3,14 +3,13 @@
 #include <string.h>
 #include "lists.h"
 
-/*
- * add_node - add_node - function adds new node
- * Description: ...
+/**
+ * add_node - function adds new node
  *
- * @head: pointer to pointer
+ * @head:pointer to pointer
  * @str: pointer
  *
- * Return: new node or NULL
+ * Return: node or NULL
  */
 
 list_t *add_node(list_t **head, const char *str)
