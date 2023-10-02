@@ -4,6 +4,10 @@
 #include<fcntl.h>
 #include<unistd.h>
 #include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 int _putchar(char c);
 void print_alphabet(void);
